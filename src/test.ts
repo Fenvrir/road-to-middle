@@ -1,4 +1,5 @@
 export function someTest (arg: string) {
-    console.log(arg)
+    const login = "Fenvrir"
+    console.log(arg + login)
     return arg
 }
