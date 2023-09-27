@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import "./Counert.scss"
+import styles from "./Counert.module.scss"
 export const Counter = () => {
     const [counter, setCounter] = useState(0)
 
@@ -14,8 +14,8 @@ export const Counter = () => {
     return (
         <div>
             <div>{counter}</div>
-            <button onClick={increment}>Click</button>
-            <button style={{marginLeft: "30px"}} onClick={reload}>Reload</button>
+            <button className={styles.margin} onClick={increment}>Click</button>
+            <button className={styles.margin} onClick={reload}>Reload</button>
         </div>
     );
 }
